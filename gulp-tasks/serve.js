@@ -19,7 +19,7 @@ gulp.task('serve', function () {
   return browserSync({
     ghostMode: false,
     notify: false,
-    port: 9000,
+    port: process.env.PORT || 9000,
     server: {
       baseDir: ['src'],
       routes: {
